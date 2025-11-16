@@ -136,8 +136,8 @@ class BarcodePatternGenerator:
             col = int(group[1])      # 두 번째 숫자: 열 (세부 변형)
             rotation = int(group[2])  # 세 번째 숫자: 회전 각도
             
-            # 회전 각도 계산 (0-9 → 0°, 36°, 72°, ..., 324°)
-            rotation_angle = rotation * 36
+            # 회전 각도 계산 (0-9 → 0°, 90°, 180°, 270°)
+            rotation_angle = rotation * 90
             
             patterns_info.append((row, col, rotation_angle))
         
